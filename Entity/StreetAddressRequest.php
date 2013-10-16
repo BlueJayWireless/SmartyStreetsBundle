@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Paul Hendryx (phendryx@malwarebytes.org)
+ * Date: 10/14/13
+ * Time: 11:52 AM
+ */
 
 namespace Malwarebytes\SmartyStreetsBundle\Entity;
 

@@ -1,10 +1,9 @@
 <?php
 /**
  * Created by JetBrains PhpStorm.
- * User: phendryx
+ * User: Paul Hendryx (phendryx@malwarebytes.org)
  * Date: 10/14/13
  * Time: 10:45 AM
- * To change this template use File | Settings | File Templates.
  */
 
 namespace Malwarebytes\SmartyStreetsBundle\Service\Tests\Service;
