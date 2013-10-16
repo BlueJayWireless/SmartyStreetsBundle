@@ -1,5 +1,5 @@
 ## About ##
-SmartyStreetsBundle is a bundle designed to encapsulate SemartyStreets REST API using
+SmartyStreetsBundle is a bundle designed to encapsulate SmartyStreets REST API using
 a repository/entity scheme for its data model. It is a continuous work in progress.
 
 
