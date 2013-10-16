@@ -5,11 +5,11 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="mwalwarebytes_smarty_streets.street_address_service.class">Malwarebytes\SmartyStreetsBundle\Service\StreetAddressService</parameter>
+        <parameter key="malwarebytes_smarty_streets.street_address_service.class">Malwarebytes\SmartyStreetsBundle\Service\StreetAddressService</parameter>
     </parameters>
 
     <services>
-        <service id="mwalwarebytes_smarty_streets.street_address_service" class="%mwalwarebytes_smarty_streets.street_address_service.class%">
+        <service id="malwarebytes_smarty_streets.street_address_service" class="%malwarebytes_smarty_streets.street_address_service.class%">
             <call method="setAuthId"><argument>%smarty_streets_authid%</argument></call>
             <call method="setAuthToken"><argument>%smarty_streets_authtoken%</argument></call>
         </service>
