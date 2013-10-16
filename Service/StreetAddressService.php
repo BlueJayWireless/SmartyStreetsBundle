@@ -71,10 +71,10 @@ class StreetAddressService
 
         $response = $this->callApi($url, $jsonInput);
 
-        $json_output = $response['output'];
-        $http_status = $response['http_status'];
+        $jsonOutput = $response['output'];
+        $httpStatus = $response['http_status'];
 
-        switch ($http_status)
+        switch ($httpStatus)
         {
             case 200:
                 continue;
@@ -94,6 +94,6 @@ class StreetAddressService
         }
 
 
-        return $serializer->deserialize($json_output, 'ArrayCollection<Malwarebytes\SmartyStreetsBundle\Entity\StreetAddressResponse>', 'json');
+        return $serializer->deserialize($jsonOutput, 'ArrayCollection<Malwarebytes\SmartyStreetsBundle\Entity\StreetAddressResponse>', 'json');
     }
 }
