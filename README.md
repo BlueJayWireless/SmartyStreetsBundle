@@ -57,6 +57,7 @@ $service = $this->get("malwarebytes_smarty_streets.street_address_service");
 $address = new \Malwarebytes\SmartyStreetsBundle\Entity\StreetAddressRequest();
 $address->setStreet('10 Almaden');
 $address->setCity('San Jose');
+$address->setState('CA');
 
 $streetAddressResponse = $service->verify($address);
 ```
