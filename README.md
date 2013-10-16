@@ -13,7 +13,7 @@ Add to composer
 {
     "require": {
         ...
-        "malwarebytes/smartystreetsbundle": "1.1"
+        "malwarebytes/smartystreetsbundle": "dev-master"
     }
     ...
 }
@@ -52,11 +52,11 @@ parameters:
 ## Example Usage ##
 
 ``` php
-        $streetAddressVerifyService = $this->get("malwarebytes_smarty_streets.street_address_service");
+        $service = $this->get("malwarebytes_smarty_streets.street_address_service");
 
         $address = new \Malwarebytes\SmartyStreetsBundle\Entity\StreetAddressRequest();
         $address->setStreet('10 Almaden');
         $address->setCity('San Jose');
 
-        $streetAddressResponse = $streetAddressVerifyService->verify($address);
+        $streetAddressResponse = $service->verify($address);
 ```
