@@ -11,8 +11,6 @@ namespace Malwarebytes\SmartyStreetsBundle\Service;
 
 use Malwarebytes\SmartyStreetsBundle\Entity\StreetAddressRequest;
 use JMS\Serializer\SerializerBuilder;
-use \Unirest;
-use \Unirest\HttpResponse;
 use \Exception;
 
 class StreetAddressService
