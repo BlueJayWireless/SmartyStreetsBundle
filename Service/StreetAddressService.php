@@ -63,7 +63,7 @@ class StreetAddressService
     {
         $serializer = SerializerBuilder::create()->build();
         $jsonInput = $serializer->serialize(array($address), 'json');
-        // Your authentication ID/token (obtained in your SmartyStreets account)
+
         $authId = urlencode($this->authId);
         $authToken = urlencode($this->authToken);
 
@@ -92,7 +92,6 @@ class StreetAddressService
                 throw new Exception("SmartyStreets Internal server error. General service failure; retry request.");
                 break;
         }
-
 
         return $serializer->deserialize($jsonOutput, 'ArrayCollection<Malwarebytes\SmartyStreetsBundle\Entity\StreetAddressResponse>', 'json');
     }
