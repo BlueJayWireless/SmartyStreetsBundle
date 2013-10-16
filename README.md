@@ -7,7 +7,7 @@ a repository/entity scheme for its data model. It is a continuous work in progre
 
 ### Get the bundle
 
-Add to composer
+Add to composer.json
 
 ``` json
 {
@@ -52,11 +52,11 @@ parameters:
 ## Example Usage ##
 
 ``` php
-        $service = $this->get("malwarebytes_smarty_streets.street_address_service");
+$service = $this->get("malwarebytes_smarty_streets.street_address_service");
 
-        $address = new \Malwarebytes\SmartyStreetsBundle\Entity\StreetAddressRequest();
-        $address->setStreet('10 Almaden');
-        $address->setCity('San Jose');
+$address = new \Malwarebytes\SmartyStreetsBundle\Entity\StreetAddressRequest();
+$address->setStreet('10 Almaden');
+$address->setCity('San Jose');
 
-        $streetAddressResponse = $service->verify($address);
+$streetAddressResponse = $service->verify($address);
 ```
