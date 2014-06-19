@@ -5,7 +5,7 @@
     "homepage": "https://github.com/Malwarebytes/SmartyStreetsBundle",
     "require": {
         "php": ">=5.3.0",
-        "jms/serializer-bundle": "dev-master"
+        "jms/serializer-bundle": "0.13.0"
     },
     "autoload": {
         "psr-0": {"Malwarebytes\\SmartyStreetsBundle": ""}
